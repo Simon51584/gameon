@@ -8,8 +8,8 @@
     
     <div class="col-md-8 basic-info">
       <div class="user-wrapper">
-        <h2 class="username">sstarr</h2>
-        <a class="edit-profile">
+        <h2 class="username"><%= current_user.username %></h2>
+        <a class="edit-profile" href="<%= edit_user_path(current_user) %>">
           <button>Edit Profile</button>
         </a>
       </div>
@@ -18,8 +18,39 @@
         <li><span>195</span> followers</li>
         <li><span>345</span> following</li>
       </ul>
-      <h2 class="name">Seth Starr</h2>
-      <a class="website">SethStarr.com</a>
+      <h2 class="name"><%= current_user.name %></h2>
+      <%=link_to current_user.website, current_user.website, class: "website" %>
     </div>
+  </div>    
+</div>
+
+<div class="user-tabs">
+  <a class="tab active" href="">
+    <i class="fa fa-th"></i>
+    POSTS
+  </a>
+  <a class="tab" href="">
+    <i class="fa fa-tv"></i>
+    GAMES
+  </a>
+  <a class="tab" href="">
+    <i class="fa fa-bookmark"></i>
+    SAVED
+  </a>
+  <a class="tab" href="">
+    <i class="fa fa-tag"></i>
+    TAGGED
+  </a>
+</div>
+
+<div class="user-images">
+  <div class="wrapper">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT9veeJiWOsMmxAFYTCuKUimZZtmDxglxaL-Q&usqp=CAU">
+  </div>
+  <div class="wrapper">
+    <img src="https://i.guim.co.uk/img/media/a92ae7a72e4238b2f8ae5a9e9713fea5a46b638c/40_0_1200_720/master/1200.jpg?width=700&quality=85&auto=format&fit=max&s=85ed72ce0ac9ea2e7a09ea17cd7af4b0">
+  </div>
+  <div class="wrapper">
+    <img src="https://media.wired.com/photos/5d31f4cb1b384200099d2c74/2:1/w_1440,h_720,c_limit/Absolver-SOURCE-Devolver-Digital.jpg">
   </div>
 </div>
