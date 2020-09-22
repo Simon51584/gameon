@@ -11,6 +11,8 @@
         <h2 class="username"><%= current_user.username %></h2>
         <a class="edit-profile" href="<%= edit_user_path(current_user) %>">
           <button>Edit Profile</button>
+          <a href="<%= destroy_user_session_path%>" data-method="delete">
+          <button>Logout</button>
         </a>
       </div>
       <ul class="posts">
