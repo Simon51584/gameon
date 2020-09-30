@@ -14,8 +14,8 @@
     <nav class="navbar navbar-light bg-light d-flex">
       <div class="container">
         <div class="logo">
-          <a class="navbar-brand" href="#">
-            <%= fa_stacked_icon "camera inverse", base: "circle"%>
+          <a class="navbar-brand" href="http://localhost:3000/" >
+            <%= fa_stacked_icon "gamepad inverse", base: "circle"%>              
             Gameon...
           </a>
         </div>
@@ -32,7 +32,7 @@
               <i class="fa fa-user"></i>
             </a>
           <% else %>
-            <a href="<%= new_user_session_path%>">       
+            <a href="<%= new_user_session_path%>" target="">       
               <i class="fa fa-sign-in"></i>
             </a>
           <% end %>

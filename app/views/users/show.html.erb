@@ -11,7 +11,8 @@
         <h2 class="username"><%= current_user.username %></h2>
         <a class="edit-profile" href="<%= edit_user_path(current_user) %>">
           <button>Edit Profile</button>
-          <a href="<%= destroy_user_session_path%>" data-method="delete">
+        </a>  
+        <a class="edit-profile" href="<%= destroy_user_session_path%>" data-method="delete">
           <button>Logout</button>
         </a>
       </div>
@@ -29,11 +30,11 @@
 <div class="user-tabs">
   <a class="tab active" href="">
     <i class="fa fa-th"></i>
-    POSTS
+    GAMES
   </a>
   <a class="tab" href="">
     <i class="fa fa-tv"></i>
-    GAMES
+    POSTS/COMMENTS
   </a>
   <a class="tab" href="">
     <i class="fa fa-bookmark"></i>
@@ -47,12 +48,19 @@
 
 <div class="user-images">
   <div class="wrapper">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT9veeJiWOsMmxAFYTCuKUimZZtmDxglxaL-Q&usqp=CAU">
+  <a class="edit-profile" href="https://tetrisnew3.herokuapp.com/" target="_blank">
+  <img src="https://media2.giphy.com/media/l41m4rC9j8kMjXB0k/giphy.gif">
+  <h1>VideoGame1</h1>
+</a>
   </div>
   <div class="wrapper">
-    <img src="https://i.guim.co.uk/img/media/a92ae7a72e4238b2f8ae5a9e9713fea5a46b638c/40_0_1200_720/master/1200.jpg?width=700&quality=85&auto=format&fit=max&s=85ed72ce0ac9ea2e7a09ea17cd7af4b0">
+  <a class="edit-profile" href="http://127.0.0.1:8887" target="_blank">
+    <img src="https://i.imgur.com/xAMLmg7.gif">
+    <h1>VideoGame2</h1>
   </div>
   <div class="wrapper">
-    <img src="https://media.wired.com/photos/5d31f4cb1b384200099d2c74/2:1/w_1440,h_720,c_limit/Absolver-SOURCE-Devolver-Digital.jpg">
+  <a class="edit-profile" href="" target="_blank">
+    <img src="https://media.tenor.com/images/c614bbb889b444c384d488babf7d1ab7/tenor.gif">
+    <h1>Coming Soon!!!</h1>
   </div>
 </div>
