@@ -5,20 +5,14 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 6.0.3
 
-* System dependencies
+* Configuration: 
+- Run "bundle install" from your terminal
+- Run Rails s from your terminal
+  
 
-* Configuration
+* Database creation:
+- You may need to seed your database so do not forget to run "rails db:seed" from your terminal
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
