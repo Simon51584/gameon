@@ -1,9 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Title:
+GameOn my video game repository
 
-Things you may want to cover:
+Description:
+This is the place where I'll be hosting all my video game titles that are self created.  
+
+Version 1.0 Basic features are up and running with more down the pipeline.
 
 * Ruby version: 6.0.3
 
